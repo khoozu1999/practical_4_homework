@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta name="generator" content="Namo WebEditor" />
+<title>Fahrenheit to Celsius Converter</title>
+<script src="tempScript.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
+  <p>&nbsp;</p>
+<form>
+  <h2>Fahrenheit to Celcius Converter</h2>
+     Enter a temperature in degrees F:
+  <input name="DegF" value="0" maxlength="15" size=15><p>
+     click this button to calculate the temperature in degrees C:
+  <input name="calc" value="Calculate" type="button"
+  onClick=temp(this.form)><p>
+Temperature in degrees C is:
+  <input name="DegC" readonly size=15></p>
+  </form>
+  
+	<p><h2>Purchase Thermometer</h2></p>
+<table width="350">
+    <tr>
+      <td width="66">Product</td>
+      <td width="272"><b>Arielyx Infra Red Earl Thermometor</b></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td>RM<input type="number" id="form2"></td>
+    </tr>
+    <tr>
+      <td>Quantity</td>
+      <td><label for="quantity">
+		  </label>
+		  <select id="quantity" onChange="quantity()">
+			  <script language="javascript" type="text/javascript">
+				  option();
+			  </script>
+		  </select>
+		<td>
+    </tr>
+	<tr>
+	<td>Total</td>
+    <td id="form3"></td></tr>
+</table>
+
+</body>
+</html>
